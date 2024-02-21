@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1DB954;
+    color: white;
+    padding: 20px;
+}
+.search-bar {
+  background-color: #f7f7f7;
+  border: none;
+  color: #000000;
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 20px;
+  width: 300px;
+}
+.search-btn {
+  background-color: #29e204;
+  border: none;
+  color: #000000;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.featured {
+    margin-bottom: 50px;
+}
+
+.song {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.song img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    background-color: #1DB954;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.btn-play {
+  background-color: #1DB954;
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
