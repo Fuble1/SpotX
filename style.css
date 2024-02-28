@@ -10,12 +10,62 @@ header {
     padding: 20px;
 }
 
+h1{
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    font-size: 38px;
+    margin-bottom: 1vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.spotify {
+    position: relative;
+    width: 7rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #00db4d;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    transform: rotate(9deg);
+}
+
+.line {
+    border: var(--line) solid transparent;
+    border-top: var(--line) solid #fff;
+    border-radius: 45%;
+    height: 2.5rem;
+    width: var(--width);
+    position: absolute;
+    margin-top: var(--margin-top);
+  }
+
+.top {
+    --width: 6rem;
+    --line: 0.82rem;
+}
+
+.middle {
+    --width: 5rem;
+    --line: 0.69rem;
+    --margin-top: 2.5rem;
+}
+
+.bottom {
+    --width: 4rem;
+    --line: 0.5rem;
+    --margin-top: 4.8rem;
+}
+
 .search-bar {
   background-color: #f7f7f7;
   border: none;
   color: #000000;
   text-align: center;
-  padding: 8px 15px;
+  padding: 8px 16px;
   border-radius: 20px;
   width: 300px;
 }
@@ -28,6 +78,20 @@ header {
   border-radius: 20px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+}
+
+.my-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 header h1 {
@@ -67,6 +131,51 @@ main {
     height: 200px;
 }
 
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1DB954;
+    color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.song-info {
+    display: flex;
+    align-items: center;
+}
+.song-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.song-info .song-details {
+    display: flex;
+    flex-direction: column;
+}
+.song-info .song-details .song-title {
+    font-weight: bold;
+}
+.controls {
+    display: flex;
+    align-items: center;
+}
+.controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.controls button:hover {
+    opacity: 0.8;
+}
 
 footer {
     background-color: #1DB954;
